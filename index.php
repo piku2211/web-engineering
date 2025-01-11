@@ -15,6 +15,15 @@ if($_SESSION['message'])
 }
 
 
+$host="localhost";
+$user="root";
+$password="";
+$db="schoolproject";
+$data=mysqli_connect($host,$user,$password,$db);
+$sql="SELECT * FROM teacher";
+$result=mysqli_query($data,$sql);
+
+
 
 ?>
 
@@ -93,33 +102,28 @@ if($_SESSION['message'])
          
             <div class="row">
 
+            <?php
+              while($info=$result->fetch_assoc())
+              {
+
+              
+            ?>
+
                <div class="col-md-4">
 
-                    <img class="teacher" src="pic-t-1.png">
-                    <p>in a vibrant,academically challenging,
-                    and encouraging environment where manifold
-                    viewpoints are prized and celebrated</p>
+                    <img class="teacher" src="<?php echo "{$info['image']}" ?>">
+                    <h3><?php echo "{$info['name']}" ?></h3>
+                    <h5><?php echo "{$info['description']}" ?></h5>
 
                </div>
+
+               <?php
+
+                }
+                
+                ?>
                
-               <div class="col-md-4">
-
-                       <img class="teacher" src="pic-t-2.png">
-                       <p>in a vibrant,academically challenging,
-                       and encouraging environment where manifold
-                       viewpoints are prized and celebrated</p>
-
-               </div>   
-
-               <div class="col-md-4">
-
-                       <img class="teacher" src="piic-t-3.jpg">
-                       <p>in a vibrant,academically challenging,
-                       and encouraging environment where manifold
-                       viewpoints are prized and celebrated</p>
-
-               </div>
-
+              
             </div>
 
        </div>
