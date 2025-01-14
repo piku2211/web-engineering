@@ -97,6 +97,7 @@ if($_GET['teacher_id'])
                     <th class="table_th">About Teacher</th>
                     <th class="table_th">Image</th>
                     <th class="table_th">Delete</th>
+                    <th class="table_th">Update</th>
                 </tr>
 
                 <?php
@@ -111,6 +112,9 @@ if($_GET['teacher_id'])
                     <td class="table_td"><image height="100px" width="100px" src="<?php echo "{$info['image']}" ?>"></td>
                     <td class="table_td"><?php echo"<a onClick=\"javascript:return confirm('Are You Sure To Delete this');\" class='btn btn-danger'
                      href='admin_view_teacher.php?teacher_id={$info['id']}'>Delete</a>"; ?></td>
+                      <td class="table_td">
+                       <?php echo "<a href='update_student.php?student_id={$info['id']}' style='background-color: #1e90ff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 14px; display: inline-block; text-align: center;'>Update</a>"; ?>
+                   </td>
                 </tr>
                 <?php 
                 } 

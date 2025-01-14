@@ -52,9 +52,9 @@ $result=mysqli_query($data,$sql);
            <nav>
                <label class="logo">X-School</label>
                <ul>
-                   <li><a href="">Home</a></li>
-                   <li><a href="">Contact</a></li>
-                   <li><a href="">Admission</a></li>
+                   <li><a href="index.php">Home</a></li>
+                   <li><a href="contact.php">Contact</a></li>
+                   <li><a href="admission.php">Admission</a></li>
                    <li><a href="login.php" class="btn btn-success">Login</a></li>
                </ul>
            </nav>

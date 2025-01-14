@@ -22,7 +22,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
 <style typr="text/css">
-    
+
+label{
+    display:inline-block;
+    text-align:right;
+    width:100px;
+    padding-top:10px;
+    padding-bottom: 10px; 
+}
+.div_deg{
+    background-color:skyblue;
+    width:500px;
+    padding-top:70px;
+    padding-bottom: 70px; 
+
+}
 .btn.btn-primary {
 background-color: blue; 
 border: none; 

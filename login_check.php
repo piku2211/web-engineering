@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 
    if($row["usertype"]=="student")
-   {
+   {       
            $_SESSION['username']=$name;
            $_SESSION['usertype']="student";
            header("location:studenthome.php");
@@ -44,12 +44,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
    }
    else
    {
-        $_SESSION['username']=$name;
-        $_SESSION['usertype']="student";
-        header("location:studenthome.php");
-      #$message = "username or password do not match";
-      #$_SESSION['loginMessage']=$message;
-      #header("location:login.php");
+
+      $message = "username or password do not match";
+      $_SESSION['loginMessage']=$message;
+      header("location:login.php");
      
    }
 

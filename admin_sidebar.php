@@ -26,13 +26,13 @@
                                 <a href="admin_add_teacher.php">Add Teacher</a>
                         </li>
                         <li>
-                                <a href="">View Teacher</a>
+                                <a href="admin_view_teacher.php">View Teacher</a>
                         </li>
                         <li>
-                                <a href="">Add Courses</a>
+                                <a href="admin_add_courses.php">Add Courses</a>
                         </li>
                         <li>
-                                <a href="">View Courses</a>
+                                <a href="admin_view_courses.php">View Courses</a>
                         </li>
                         
                 </ul>
