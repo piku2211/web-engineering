@@ -42,7 +42,7 @@ background-color: blue;
 border: none; 
 color: white; 
 padding: 10px 20px; 
-font-size: 15px; 
+font-size: 16px; 
 border-radius: 10px; 
 cursor: pointer;
 transition: background-color 0.3s ease; 
