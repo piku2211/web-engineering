@@ -103,7 +103,7 @@ session_start();
                 border: none;
                 cursor: pointer;
                 border-radius: 5px;
-                font-size: 14px;
+                font-size: 15px;
                 margin-top: 10px; 
                 margin-bottom: 10px;
             }
